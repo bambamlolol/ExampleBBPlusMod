@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using HarmonyLib;
 
-namespace ExampleMod
+namespace BamMod
 {
 	[HarmonyPatch(typeof(Baldi))]
-	[HarmonyPatch("OnTriggerEnter")]
+	[HarmonyPatch("CaughtPlayer")]
 	class BaldiNoKillPatch
 	{
 		static bool Prefix()
